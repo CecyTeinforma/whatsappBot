@@ -5,7 +5,8 @@ services:
     plan: free
     region: oregon
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn chatbotai:app"
+    #startCommand: "gunicorn chatbotai:app"
+    startCommand: "python3 app.py"
     envVars:
       - key: VERIFY_TOKEN
         sync: false
